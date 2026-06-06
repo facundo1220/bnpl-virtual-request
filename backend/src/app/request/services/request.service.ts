@@ -3,15 +3,15 @@ import {
   ICalculateRequest,
   ICalculateResponse,
 } from '../interfaces/calculateRequest.interface';
+import { InstallmentService } from 'src/app/installment/services/installment.service';
 
 @Injectable()
 export class RequestService {
+  constructor(private installmentService: InstallmentService) {}
+
   calculateRequest(userInput: ICalculateRequest): ICalculateResponse {
-    return {
-      installmentDates: [],
-      amount: userInput.amount,
-      expirationDate: undefined,
-      interestRate: 0,
-    };
+    const response = this.installmentService.calculateInstallment(userInput);
+
+    return response;
   }
 }
