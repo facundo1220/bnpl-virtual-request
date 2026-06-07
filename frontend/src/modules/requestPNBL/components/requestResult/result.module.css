@@ -1,0 +1,27 @@
+.main-container {
+  @apply flex flex-col gap-4 bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+}
+
+.title {
+  @apply text-lg font-semibold text-gray-800;
+}
+
+.field {
+  @apply flex flex-col gap-1;
+}
+
+.label {
+  @apply text-sm font-medium text-gray-600;
+}
+
+.value {
+  @apply text-gray-800;
+}
+
+.list {
+  @apply list-disc list-inside text-gray-800;
+}
+
+.back-button {
+  @apply mt-2 bg-blue-600 text-white font-medium rounded-md px-4 py-2 transition-colors hover:bg-blue-700;
+}

@@ -1,0 +1,23 @@
+.main-container {
+  @apply flex flex-col gap-4 bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+}
+
+.field {
+  @apply flex flex-col gap-1;
+}
+
+.label {
+  @apply text-sm font-medium text-gray-600;
+}
+
+.input {
+  @apply border border-gray-300 rounded-md px-3 py-2 outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500;
+}
+
+.field-error {
+  @apply text-red-500 text-sm;
+}
+
+.submit-button {
+  @apply mt-2 bg-blue-600 text-white font-medium rounded-md px-4 py-2 transition-colors hover:bg-blue-700;
+}

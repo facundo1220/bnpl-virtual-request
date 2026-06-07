@@ -1,0 +1,7 @@
+.page {
+  @apply max-w-md mx-auto flex flex-col gap-6;
+}
+
+.main-title {
+  @apply text-2xl font-semibold text-gray-800;
+}
